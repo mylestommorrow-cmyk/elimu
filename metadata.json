@@ -1,0 +1,6 @@
+{
+  "name": "ElimuBridge",
+  "description": "Reliable CBC & KCSE e-learning platform for Kenyan learners with offline-first revision materials, interactive quizzes, multi-profile tracking, and bilingual AI tutor.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

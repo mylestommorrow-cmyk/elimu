@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --color-usiu-navy: #002B49;
+  --color-usiu-navy-dark: #001E33;
+  --color-usiu-navy-light: #0A3D62;
+  --color-usiu-gold: #F2A900;
+  --color-usiu-gold-hover: #D99600;
+  --color-usiu-gold-light: #FFF8E6;
+  --color-usiu-slate: #F4F6F9;
+}
+
+:root {
+  --bg-gradient: #F4F6F9;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #F4F6F9;
+  color: #0F172A;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+/* Institutional Portal subtle animations */
+@keyframes portalFade {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-portal-fade {
+  animation: portalFade 0.25s ease-out forwards;
+}
+
+/* Custom discreet scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #E2E8F0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #002B49;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #001E33;
+}
